@@ -1,0 +1,76 @@
+@media (max-width: 1200px){
+  .sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px; /* set to the header's height so it doesnt obstruct */
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+  .sidebar-link{
+    height: 74px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    /* used to put sidebar link div text below the icons */
+    /* with this, justify-content and align-items are reversed */
+  }
+  .sidebar-link:hover{
+    background-color: rgb(235, 235, 235);
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  /* targets all images inside all sidebar links */
+  .sidebar-link div{
+    font-size: 10px;
+  }
+  /* targets all divs inside all sidebar links */
+}
+
+@media (min-width: 1200.1px){
+  /* body padding is set in general.css */
+  .sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px; /* set to the header's height so it doesnt obstruct */
+    background-color: white;
+    width: 250px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  .sidebar-link{
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+
+    flex-direction: row;
+    /* used to put sidebar link div text below the icons */
+    /* with this, justify-content and align-items are reversed */
+  }
+  .sidebar-link:hover{
+    background-color: rgb(235, 235, 235);
+  }
+
+  .sidebar-link img {
+    margin-left: 25px;
+    height: 24px;
+    margin-right: 25px;
+  }
+  /* targets all images inside all sidebar links */
+  .sidebar-link div{
+    font-size: 14px;
+  }
+  /* targets all divs inside all sidebar links */
+}
